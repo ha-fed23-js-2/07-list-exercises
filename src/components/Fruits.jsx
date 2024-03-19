@@ -8,9 +8,10 @@ import {fruits} from '../data/fruits.js'
 
 const Fruits = () => {
 	// console.log('Fruits: ', fruits);
+	const sortedList = fruits.sort()
 	return (
 		<ul>
-		{fruits.map(fruit => (
+			{sortedList.map(fruit => (
 			<li key={fruit}> {fruit} </li>
 		))}
 		</ul>
